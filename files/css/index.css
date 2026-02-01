@@ -109,3 +109,14 @@ main hr {
     background-color: #eee;
     height: 1px;
 }
+
+.classroom-news {
+  font-size: 2em;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}

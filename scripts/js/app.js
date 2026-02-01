@@ -1736,6 +1736,21 @@ exports.itemsToCache = [
     // Put more items in the array below here.
 ];
 
+window.onscroll = function () {
+  makeSticky();
+};
+
+const navbar = document.getElementById("navbar");
+const stickyPoint = navbar.offsetTop;
+
+function makeSticky() {
+  if (window.pageYOffset > stickyPoint) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
 },{"./html/footer.html":27,"./html/header.html":28}],27:[function(require,module,exports){
 module.exports = "<footer id=\"colophon\" class=\"footer\" role=\"contentinfo\">\r\n  <div class=\"container\">\r\n    <div class=\"footer-widgets\">\r\n      <aside class=\"widget site-contact\">\r\n        <h2 class=\"footer-widget-title\">Nursery School</h2>\r\n        <p>6926 Forest Park Parkway</p>\r\n        <p>St. Louis, MO 63130</p>\r\n        <p class=\"phone\">314-935-6689 <span>|</span> Fax: 314-935-7249</p>\r\n        <p>\r\n          <a href=\"files/mailto:nursery@wustl.edu\">nursery@wustl.edu</a>\r\n        </p>\r\n      </aside>\r\n\r\n      <div class=\"widget-wrapper\">\r\n        <aside id=\"text-4\" class=\"widget widget_text widget-count-2\">\r\n          <h2 class=\"footer-widget-title\">Hours of Operation</h2>\r\n          <div class=\"textwidget\">\r\n            <p>\r\n              Classes meet Mon. through Fri.<br>\r\n              Morning: 9-11:45 a.m.<br>\r\n              Afternoon: 12:30-3:15 p.m.<br>\r\n              Full day: 9 a.m.-3:15 p.m.\r\n            </p>\r\n          </div>\r\n        </aside>\r\n        <aside id=\"text-3\" class=\"widget widget_text widget-count-2\">\r\n          <h2 class=\"footer-widget-title\">Apply for the Nursery School</h2>\r\n          <div class=\"textwidget\">\r\n            <p>\r\n              Experience the innovative approach and dynamic teaching\r\n              environment of the Washington University Nursery School.\r\n            </p>\r\n            <a href=\"files/apply.html\">Register Now</a>\r\n          </div>\r\n        </aside>\r\n      </div>\r\n    </div>\r\n    <div class=\"site-info\">\r\n      <p class=\"footer-copyright\">©2019 Washington University in St. Louis</p>\r\n    </div>\r\n  </div>\r\n</footer>";
 
