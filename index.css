@@ -120,3 +120,16 @@ main hr {
   width: 100%;
   z-index: 1000;
 }
+const navbar = document.getElementById("navbar");
+
+if (navbar) {
+  const stickyPoint = navbar.offsetTop;
+
+  window.addEventListener("scroll", () => {
+    if (window.pageYOffset > stickyPoint) {
+      navbar.classList.add("sticky");
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  });
+}

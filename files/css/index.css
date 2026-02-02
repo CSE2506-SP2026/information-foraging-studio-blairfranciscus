@@ -120,3 +120,12 @@ main hr {
   width: 100%;
   z-index: 1000;
 }
+
+<div class="dropdown">
+  <button class="dropbtn">Photos</button>
+  <div class="dropdown-content">
+    <a href="files/photos-bears.html">Bears Classroom</a>
+    <a href="files/photos-cubs.html">Cubs Classroom</a>
+    <a href="files/photos-owls.html">Owls Classroom</a>
+  </div>
+</div>
